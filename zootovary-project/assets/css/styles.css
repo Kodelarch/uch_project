@@ -1,0 +1,109 @@
+body {
+    font-family: 'Georgia', serif; /* Шрифт с засечками */
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #d3d3d3, #ffffff); /* Light gray to white gradient */
+    min-height: 100vh; /* Ensure body takes full height */
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    padding: 20px;
+    flex: 1; /* Allow main content to grow */
+}
+
+nav {
+    background: black; /* Black background for navigation */
+    color: white;
+    padding: 20px; /* Increased padding */
+}
+
+nav a {
+    color: white; /* White text for navigation links */
+    margin-right: 30px; /* Increased spacing between links */
+    text-decoration: none;
+    font-size: 24px; /* Increased font size for visibility */
+    transition: color 0.3s; /* Transition for hover effect */
+}
+
+nav a:hover {
+    color: #ffeb3b; /* Change color on hover */
+}
+
+.catalog, .cart-items, .orders {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product, .cart-item, .order {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 15px; /* Rounded corners */
+    margin: 20px; /* Increased margin */
+    padding: 25px; /* Increased padding */
+    width: calc(25% - 50px); /* Adjusted width for smaller product cards */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* More noticeable shadow */
+    transition: transform 0.3s; /* Transition for hover effect */
+}
+
+.product:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+button {
+    background-color: #000000; /* Black buttons */
+    color: white;
+    border: none;
+    padding: 20px 40px; /* Increased button size */
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 24px; /* Increased font size for buttons */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #444444; /* Darker shade on hover */
+    transform: scale(1.1); /* Increase button size on hover */
+}
+
+.error {
+    color: red;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+.carousel-item img {
+    height: 250px; /* Updated height for main slider */
+    object-fit: cover;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.card-img-top {
+    height: 150px; /* Adjusted height for product images */
+    object-fit: cover;
+}
+
+.fixed-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+footer {
+    background: #2c2c2c;
+    color: white; /* White text for footer */
+    padding: 20px 0;
+    width: 100%; /* Ensure footer takes full width */
+}
+
+.footer-container {
+    padding: 20px;
+    text-align: center;
+}
